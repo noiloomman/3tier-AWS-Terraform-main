@@ -134,7 +134,7 @@ resource "aws_route_table_association" "b" {
 
 #Create EC2 Instance
 resource "aws_instance" "webserver1" {
-  ami                    = "ami-0d5eff06f840b45e9"
+  ami                    = "ami-04ddf30efb5385f93"
   instance_type          = "t2.micro"
   availability_zone      = "ap-southeast-1a"
   vpc_security_group_ids = [aws_security_group.webserver-sg.id]
